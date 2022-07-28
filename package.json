@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "env": "^0.0.2",
+    "express": "^4.17.2",
+    "firebase": "^9.6.4",
+    "firebase-admin": "^10.0.2",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "name": "api_lab_marcelo_spinola",
+  "version": "2.0.0",
+  "description": "Api de Qr marcelo spinola ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --watch src src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Andres Macias Veliz",
+  "license": "ISC"
+}

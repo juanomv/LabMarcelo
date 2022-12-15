@@ -15,7 +15,7 @@ const app=express()
 // listaBlanca
 const corsOptions ={
     //origin:'http://localhost:3000', 
-    origin:'https://marcelo-spinola-lb-caf68.web.app',
+    origin: 'https://marcelo-spinola-lb-caf68.web.app',
     credentials:true,          
     optionSuccessStatus:200
 }  

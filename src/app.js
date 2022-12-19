@@ -15,23 +15,15 @@ const app=express()
 // listaBlanca
 const corsOptions ={
     //origin:'http://localhost:3000', 
-    origin: 'https://marcelo-spinola-lb-caf68.web.app',
-    credentials:false,          
-    optionSuccessStatus:200
+    origin: ['https://marcelo-spinola-lb-caf68.web.app'],
+    
 }  
 // mildelware
 app.use(morgan('dev'));
 app.use(urlencoded({extended: true}))
 
 app.use(json())
-app.use((req, res, next) => {
-        res.header('Access-Control-Allow-Origin', '*');
-        res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
-        res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-        res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
-        next();
-    });
-//app.use();
+app.use(cors(corsOptions));
   
 
 // rutas

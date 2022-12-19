@@ -21,9 +21,9 @@ const corsOptions ={
 // mildelware
 app.use(morgan('dev'));
 app.use(urlencoded({extended: true}))
-
+app.use( cors({ origin: true, credentials: true  }) );
 app.use(json())
-app.use(cors());
+
   
 
 // rutas

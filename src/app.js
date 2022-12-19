@@ -23,7 +23,7 @@ app.use(morgan('dev'));
 app.use(urlencoded({extended: true}))
 
 app.use(json())
-app.use(cors(corsOptions));
+app.use(cors());
   
 
 // rutas
